@@ -116,9 +116,6 @@ stages:
       runOnce:
         deploy:
           steps:
-          - task: Delay@1
-            inputs:
-              delayForMinutes: '1'
           - download: current
             artifact: drop
           - task: AzureWebApp@1
